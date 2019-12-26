@@ -1,0 +1,17 @@
+###
+### mocha.opts
+###
+
+#--require ./test/setup
+#--ui bdd
+#--globals okGlobalA,okGlobalB
+#--globals okGlobalC
+#--globals callback*
+--timeout 50000 
+--slow 1000
+--require=env-test
+--require ts-node/register # replace with ts-node/register/transpile-only if you have custom types
+--require source-map-support/register
+--recursive
+// mocha.env.js
+#process.env.NODE_ENV = 'test';

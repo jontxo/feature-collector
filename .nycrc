@@ -1,0 +1,22 @@
+{
+    "all": true,
+    "check-coverage": true,
+    "include": [
+        "lib/**/*.ts",
+        "lib/**/*.js",
+        "lib/*.ts",
+        "lib/*.js"
+    ],
+    "require": [
+        "ts-node/register"
+    ],
+    "reporter": [
+        "text",
+        "html",
+        "cobertura",
+        "lcov"
+    ],
+    "sourceMap": true,
+    "instrument": true,
+    "cache": true
+}

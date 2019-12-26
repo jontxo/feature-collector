@@ -1,0 +1,75 @@
+{
+  "name": "feature-collector",
+  "version": "1.0.3",
+  "description": "collect feature files in an object",
+  "keywords": [
+    "cucumber",
+    "features",
+    "gherkin"
+  ],
+  "main": "lib/feature-collector.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha-parallel-tests -r ts-node/register --recursive test/**/*-spec.*  --timeout 50000 --slow 1000 ",
+    "test-cover": "nyc --clean npm run test",
+    "update-package-json-dependencies": "npx ncu -u",
+    "generate:eslintrc": "npx tslint-to-eslint-config",
+    "eslint-fix-all": "npx eslint lib/**/*.ts test/**/*.ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://yon_cuadrado@bitbucket.org/yon_cuadrado/cucumber-node-html-reporter.git"
+  },
+  "author": "Yon Cuadrado",
+  "dependencies": {
+    "eslint-config-prettier": "6.8.0",
+    "eslint-plugin-prettier": "3.1.2",
+    "fs-extra": "8.1.0",
+    "json-future": "2.2.4"
+  },
+  "devDependencies": {
+    "@types/chai": "4.2.7",
+    "@types/chai-as-promised": "7.1.2",
+    "@types/fs-extra": "8.0.1",
+    "@types/long": "4.0.0",
+    "@types/mocha": "5.2.7",
+    "@types/node": "13.1.0",
+    "@types/sinon": "7.5.1",
+    "@types/sinon-chai": "3.2.3",
+    "@typescript-eslint/eslint-plugin": "2.13.0",
+    "@typescript-eslint/eslint-plugin-tslint": "2.13.0",
+    "@typescript-eslint/parser": "2.13.0",
+    "c21e": "2.0.0",
+    "chai": "4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "codelyzer": "5.2.1",
+    "eslint": "6.8.0",
+    "eslint-config-standard": "14.1.0",
+    "eslint-plugin-chai-friendly": "0.5.0",
+    "eslint-plugin-import": "2.19.1",
+    "eslint-plugin-node": "10.0.0",
+    "eslint-plugin-prefer-arrow": "1.1.7",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1",
+    "gherkin": "9.0.0",
+    "import": "0.0.6",
+    "mocha": "6.2.2",
+    "mocha-parallel-tests": "2.2.2",
+    "mocha-sinon": "2.1.0",
+    "npm-check-updates": "4.0.1",
+    "nyc": "15.0.0",
+    "prettier": "1.19.1",
+    "rxjs-tslint": "0.1.7",
+    "sinon": "8.0.1",
+    "sinon-chai": "3.4.0",
+    "ts-node": "8.5.4",
+    "tslint": "5.20.1",
+    "tslint-to-eslint-config": "0.5.0",
+    "typescript": "3.7.4"
+  },
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "test"
+  },
+  "license": "ISC"
+}

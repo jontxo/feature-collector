@@ -1,0 +1,12 @@
+.idea/
+.tmp/
+coverage/
+node_modules/
+reports/
+test/reportResult/
+cucumber_html_reports.zip
+cucumber_html_reporter.tar.gz
+package-lock.json
+.nyc_output/
+lcov.info
+tslint-to-eslint-config.log
